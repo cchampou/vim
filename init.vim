@@ -8,6 +8,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
