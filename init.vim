@@ -27,6 +27,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
+Plug 'github/copilot.vim'
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
