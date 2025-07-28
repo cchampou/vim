@@ -35,6 +35,7 @@ let g:ale_fix_on_save = 1
 
 call plug#begin()
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'godlygeek/tabular'
 Plug 'preservim/nerdtree'
 Plug 'nvim-lua/popup.nvim'
@@ -49,10 +50,13 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'github/copilot.vim'
 Plug 'lbrayner/vim-rzip'
 Plug 'dense-analysis/ale'
-
+Plug 'hedyhli/outline.nvim'
+Plug 'epheien/outline-treesitter-provider.nvim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
+
+lua require("outline").setup({})
 
 call asyncomplete#register_source(asyncomplete#sources#tscompletejob#get_source_options({
     \ 'name': 'tscompletejob',
