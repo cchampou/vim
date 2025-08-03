@@ -1,1 +1,3 @@
-vim.cmd('source ./legacy.vim')
+vim.cmd('source ~/.config/nvim/legacy.vim')
+
+require'lspconfig'.ts_ls.setup{}

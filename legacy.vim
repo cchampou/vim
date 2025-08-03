@@ -41,25 +41,15 @@ Plug 'preservim/nerdtree'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'runoshun/tscompletejob'
-Plug 'prabirshrestha/asyncomplete-tscompletejob.vim'
-Plug 'mattn/vim-lsp-settings'
-Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'github/copilot.vim'
 Plug 'lbrayner/vim-rzip'
 Plug 'dense-analysis/ale'
 Plug 'hedyhli/outline.nvim'
 Plug 'epheien/outline-treesitter-provider.nvim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
 
 lua require("outline").setup({})
 
-call asyncomplete#register_source(asyncomplete#sources#tscompletejob#get_source_options({
-    \ 'name': 'tscompletejob',
-    \ 'allowlist': ['typescript'],
-    \ 'completor': function('asyncomplete#sources#tscompletejob#completor'),
-    \ }))
