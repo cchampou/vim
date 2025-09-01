@@ -48,8 +48,10 @@ Plug 'hedyhli/outline.nvim'
 Plug 'epheien/outline-treesitter-provider.nvim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'neovim/nvim-lspconfig'
+Plug 'wuelnerdotexe/vim-astro'
 
 call plug#end()
 
 lua require("outline").setup({})
 
+let g:astro_typescript = 'enable'
